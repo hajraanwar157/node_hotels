@@ -31,6 +31,14 @@ const personSchema = new Schema({
     type: Number,
     required: true,
   },
+  username: {
+    type: String,
+    required: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
 });
 const person = mongoose.model("Person", personSchema);
 module.exports = person;
